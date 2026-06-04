@@ -1,6 +1,8 @@
 # RAG Chatbot using FastAPI + LangChain + Ollama (LLM)
 
-This FastAPI application leverages LangChain to provide chat functionalities powered by HuggingFace embeddings and Ollama language models. It supports initializing a PostgreSQL vector database with text or CSV data.
+A privacy-first, fully local AI chatbot built with FastAPI and LangChain that runs entirely on your own infrastructure — no cloud LLM costs, no data leaving your system.
+
+HuggingFace embeddings power the semantic understanding of your documents, while Ollama serves open-source language models locally for response generation. PostgreSQL with pgvector acts as the vector store, supporting initialization from text and CSV data sources — making this system ideal for enterprise knowledge bases, compliance tools, and sensitive data environments.
 
 ## Features
 
