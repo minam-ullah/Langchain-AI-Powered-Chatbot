@@ -1,17 +1,17 @@
-# RAG Chatbot using LangChain, Ollama (LLM), PG Vector (vector store db) and FastAPI
+# RAG Chatbot using FastAPI + LangChain + Ollama (LLM)
 
 This FastAPI application leverages LangChain to provide chat functionalities powered by HuggingFace embeddings and Ollama language models. It supports initializing a PostgreSQL vector database with text or CSV data.
 
 ## Features
 
-- Initialize database with text or CSV data
+- Initialize the database with text or CSV data
 - Perform chat queries using retrieval-augmented generation (RAG)
 - Conversation history management
 
 ## Prerequisites
 
 - Python 3.10+
-- PostgreSQL database with PGVector extention
+- PostgreSQL database with PGVector extension
   ```sh
   docker run --name pgvector-container -e POSTGRES_USER=langchain -e POSTGRES_PASSWORD=langchain -e POSTGRES_DB=langchain -p 5432:5432 -d pgvector/pgvector:pg16
   ```
@@ -79,7 +79,7 @@ This FastAPI application leverages LangChain to provide chat functionalities pow
 
     ```json
     {
-        "message": "RAG ChatBot built for you to chat with you data."
+        "message": "RAG ChatBot built for you to chat with your data."
     }
     ```
 
@@ -125,7 +125,7 @@ This FastAPI application leverages LangChain to provide chat functionalities pow
 
     ```json
     {
-        "answer": "Generated response based on the question and context"
+        "answer": "Generated response based on the question and context."
     }
     ```
 
